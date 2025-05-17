@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Nexo Chat',
-      initialRoute: 'login',
+      initialRoute: 'usuarios',
       routes: appRoutes,
     );
   }
