@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 
 class BotonIngres extends StatelessWidget {
   final String text;
-  final Function onPressed;
+  final VoidCallback? onPressed;
 
   const BotonIngres({super.key, required this.text, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {
-        onPressed;
-      },
+      onPressed: onPressed,
+
       style: ElevatedButton.styleFrom(
         shape: StadiumBorder(),
         foregroundColor: Colors.white,
